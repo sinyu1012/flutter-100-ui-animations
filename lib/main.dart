@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_100_ui_animations/animation/wave.dart';
+import 'package:flutter_100_ui_animations/animation/liquid_loader.dart';
 
 void main() {
   runApp(const MyApp());
@@ -57,6 +58,15 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
                 );
               },
               child: Text('Animate-波浪'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LiquidLoaderPage()),
+                );
+              },
+              child: Text('流体液态加载动画'),
             ),
           ],
         ),
