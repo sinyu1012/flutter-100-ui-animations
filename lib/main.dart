@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_100_ui_animations/animation/wave.dart';
 import 'package:flutter_100_ui_animations/animation/liquid_loader.dart';
+import 'package:flutter_100_ui_animations/animation/magnetic_particles.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,6 +50,7 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
       body: Center(
         // List of animations
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             GestureDetector(
               onTap: () {
@@ -57,7 +59,15 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
                   MaterialPageRoute(builder: (context) => WaveAnimationPage()),
                 );
               },
-              child: Text('Animate-波浪'),
+              child: Container(
+                margin: EdgeInsets.symmetric(vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                decoration: BoxDecoration(
+                  color: Colors.blue.shade100,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text('Animate-波浪', style: TextStyle(fontSize: 16)),
+              ),
             ),
             ElevatedButton(
               onPressed: () {
@@ -67,6 +77,20 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
                 );
               },
               child: Text('流体液态加载动画'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MagneticParticlesPage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Color(0xFF007AFF),
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
+              child: Text('磁性粒子流', style: TextStyle(color: Colors.white)),
             ),
           ],
         ),
