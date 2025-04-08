@@ -1,16 +1,35 @@
-# flutter_100_ui_animations
+# Flutter 100 UI 动画
 
-A new Flutter project.
+这是一个展示各种精美Flutter UI动画的项目集合，旨在为开发者提供丰富的动画示例和灵感。
 
-## Getting Started
+## 项目概述
 
-This project is a starting point for a Flutter application.
+这个项目包含多种精心设计的UI动画效果，每个动画都是独立的组件，可以轻松集成到您自己的Flutter应用中。
 
-A few resources to get you started if this is your first Flutter project:
+## 已实现的动画
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+目前项目包含以下动画：
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **波浪动画** - 一个流畅的波浪效果动画 [掘金文章](https://juejin.cn/post/7457838608327852070)
+2. **流体液态加载动画** - 模拟液体流动的加载动画 [掘金文章](https://juejin.cn/post/7484088857283297291)
+3. **磁性粒子流** - 具有磁性吸引效果的粒子动画 [掘金文章](https://juejin.cn/post/7490500767138676775)
+
+## 技术细节
+
+- 使用了Flutter的动画系统
+- 实现了自定义绘制与动画控制
+- 兼容Flutter的Material Design 3
+- 针对不同设备屏幕进行了自适应设计
+
+
+## 目标与展望
+
+这个项目计划实现100种不同的UI动画效果，每个动画都将展示Flutter不同的动画能力和技术。我们将持续更新和添加新的动画效果。
+
+## 贡献指南
+
+欢迎贡献新的动画效果！如果您有好的动画创意或实现，请提交Pull Request。
+
+## 许可证
+
+本项目采用MIT许可证。详情请查看LICENSE文件。
