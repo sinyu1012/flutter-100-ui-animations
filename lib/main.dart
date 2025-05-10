@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_100_ui_animations/animation/wave.dart';
 import 'package:flutter_100_ui_animations/animation/liquid_loader.dart';
 import 'package:flutter_100_ui_animations/animation/magnetic_particles.dart';
+import 'package:flutter_100_ui_animations/animation/animated_mesh_gradient.dart';
 
 void main() {
   runApp(const MyApp());
@@ -91,6 +92,22 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
                 padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
               ),
               child: Text('磁性粒子流', style: TextStyle(color: Colors.white)),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AnimatedMeshGradientPage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal.shade300,
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
+              child:
+                  const Text('动态网格渐变', style: TextStyle(color: Colors.white)),
             ),
           ],
         ),
