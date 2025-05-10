@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_100_ui_animations/animation/falling_confett.dart';
 import 'package:flutter_100_ui_animations/animation/wave.dart';
 import 'package:flutter_100_ui_animations/animation/liquid_loader.dart';
 import 'package:flutter_100_ui_animations/animation/magnetic_particles.dart';
@@ -53,6 +54,16 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const FallingConfettiPage()),
+                );
+              },
+              child: const Text('彩带飘落'),
+            ),
             GestureDetector(
               onTap: () {
                 Navigator.push(
